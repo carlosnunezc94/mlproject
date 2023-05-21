@@ -5,9 +5,6 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 from src.logger import logging
-## This apparently fix the issue of unable to run python src/components/data_ingestion.py
-from pathlib import Path
-sys.path.append(str(Path(__file__).parent.parent.parent))
 
 @dataclass
 class DataIngestionConfig:
